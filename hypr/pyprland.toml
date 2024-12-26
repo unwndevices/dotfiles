@@ -1,0 +1,55 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.term]
+command = "kitty --class scratchpad"
+class = "scratchpad"
+animation = "fromTop"
+margin = 40
+size = "50% 50%"
+allow_special_workspace = true
+
+[scratchpads.perplexity]
+command = "perplexity-ai-app"
+class = "Perplexity AI"
+animation = "fromTop"
+unfocus = "hide"
+hysteresis = 0.8
+margin = 40
+size = "50% 70%"
+allow_special_workspace = true
+
+[scratchpads.yazi]
+command = "kitty --class yazi y"
+class = "yazi"
+unfocus = "hide"
+hysteresis = 0.8
+animation = "fromTop"
+margin = 40
+size = "50% 50%"
+allow_special_workspace = true
+
+[scratchpads.btop]
+command = "kitty --class btop btop"
+class = "btop"
+unfocus = "hide"
+hysteresis = 0.8
+animation = "fromTop"
+margin = 40
+size = "50% 50%"
+allow_special_workspace = true
+
+[scratchpads.kicad]
+command = "kicad"
+process_tracking = false
+class = "kicad"
+match-by = "title"
+title = '''re:^.*KiCad\s\d+(\.\d+)*$'''
+animation = "fromTop"
+unfocus = "hide"
+hysteresis = 0.8
+margin = 40
+size = "50% 50%"
+allow_special_workspace = true
+pinned = false
+lazy = true

@@ -1,0 +1,188 @@
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "cmake.configureOnOpen": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "debug.onTaskErrors": "showErrors",
+    "editor.showFoldingControls": "always",
+    "editor.foldingStrategy": "indentation",
+    "explorer.confirmDelete": false,
+    "breadcrumbs.enabled": true,
+    "editor.fontFamily": "MonoLisa",
+    "editor.fontLigatures": "true",
+    "editor.fontWeight": "300",
+    "editor.lineHeight": 0,
+    "editor.letterSpacing": 0.3,
+    "editor.fontSize": 14.5,
+    "editor.renderWhitespace": "boundary",
+    "editor.inlineSuggest.suppressSuggestions": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "storage.type",
+                    "variable.language",
+                    "support.type",
+                    "entity.name.type",
+                    "keyword",
+                    "storage.modifier",
+                    "storage.type.class.js",
+                    "storage.type.function.js",
+                    "storage.type.js",
+                    "keyword.control.import.js",
+                    "keyword.control.from.js",
+                    "keyword.control.flow.js",
+                    "keyword.control.conditional.js",
+                    "keyword.control.loop.js",
+                    "keyword.operator.new.js"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "variable.parameter",
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json",
+                    "entity.name.type.class.js"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "colorize.hide_current_line_decorations": false,
+    "colorize.languages": [
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg",
+        "jsonc",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "markdown"
+    ],
+
+    "colorize.colorized_variables": ["CSS"],
+    "files.associations": {
+        "*.json": "jsonc"
+    },
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "git.ignoreMissingGitWarning": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.configPath": "C:\\.prettierrc",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "workbench.tree.indent": 20,
+    "workbench.colorTheme": "Rosé Pine Moon",
+    "git.confirmSync": false,
+    "cmake.generator": "Visual Studio 16 2019",
+    "cmake.buildDirectory": "${workspaceFolder}/build/",
+    "security.workspace.trust.untrustedFiles": "open",
+    "livePreview.notifyOnOpenLooseFile": false,
+    "git.enableSmartCommit": true,
+    "editor.guides.bracketPairs": true,
+    "editor.stickyScroll.maxLineCount": 7,
+    "scm.alwaysShowActions": true,
+    "editor.accessibilitySupport": "off",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.sortOrder": "fullPath",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "editor.inlineSuggest.enabled": true,
+
+    "git.openRepositoryInParentFolders": "never",
+    "C/C++ Include Guard.Comment Style": "Line",
+    "C/C++ Include Guard.Macro Type": "Filename",
+    "C/C++ Include Guard.Remove Extension": false,
+    "C/C++ Include Guard.Path Depth": 0,
+    "C/C++ Include Guard.Path Skip": 0,
+    "C/C++ Include Guard.Spaces After Endif": 0,
+    "workbench.iconTheme": "rose-pine-icons",
+    "editor.mouseWheelZoom": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/src/css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "cmake.showOptionsMovedNotification": false,
+    "npm.enableRunFromFolder": true,
+    "extensions.ignoreRecommendations": true,
+    "svg.preview.mode": "svg",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.commandCenter": false,
+    "explorer.confirmPasteNative": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "top",
+    "diffEditor.renderSideBySide": true,
+    "makefile.configureOnOpen": true,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "window.customTitleBarVisibility": "auto",
+    "window.menuBarVisibility": "toggle"
+}

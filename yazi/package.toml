@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "yazi-rs/plugins:jump-to-char", rev = "c7feb90" }, { use = "TD-Sky/sudo", rev = "a8287ea" }]
+
+[flavor]
+deps = []

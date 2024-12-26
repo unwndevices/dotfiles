@@ -1,0 +1,23 @@
+{
+  "window.commandCenter": false,
+  "editor.fontFamily": "'SF Mono', 'monospace', monospace",
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Rosé Pine",
+  "workbench.iconTheme": "rose-pine-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.tree.indent": 18,
+  "explorer.confirmDelete": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "phpCodeSniffer.standard": "Automatic",
+  "editor.formatOnSave": true,
+  "phpCodeSniffer.autoExecutable": true,
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDragAndDrop": false,
+  "git.openRepositoryInParentFolders": "never",
+  "phpCodeSniffer.lintAction": "Save",
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "obliviousharmony.vscode-php-codesniffer"
+  },
+  "cursor.cmdk.useThemedDiffBackground": true
+}
