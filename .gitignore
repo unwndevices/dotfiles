@@ -1,6 +1,8 @@
 # Ignore everything by default
-*
-!/.gitignore
+/**
+
+
+!.gitignore
 !/README.md
 
 # Track specific configs
@@ -23,6 +25,7 @@ aseprite/files/
 !gtk-*/**
 !qt*/**
 !hypr/**
+!hypr/
 !hyprpanel/**
 !kicad/**
 !kitty/**
@@ -43,8 +46,9 @@ aseprite/files/
 !symlinks/**
 !/install.sh
 !/install_packages.sh
+!kanshi/
 
-# Still ignore certain patterns in tracked directories
+# ignore certain patterns in tracked directories
 **/.DS_Store
 **/node_modules/
 **/__pycache__/
@@ -54,3 +58,4 @@ aseprite/files/
 **/*.bak
 **/*.old
 **/*.cache
+**/*.bak

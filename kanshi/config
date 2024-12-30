@@ -1,0 +1,26 @@
+profile docked {
+    output HDMI-A-1 {
+        mode 5120x1440@59.977
+        position 0,0
+    }
+    output eDP-1 disable
+}
+
+profile dual {
+    output HDMI-A-1 {
+        mode 5120x1440@59.977
+        position 0,0
+    }   
+    output eDP-1 {
+        mode 1920x1080@300.185
+        position 0,0
+    }
+}
+
+profile {
+    output eDP-1 {
+        mode 1920x1080@300.185
+        position 0,0
+    }
+}
+
