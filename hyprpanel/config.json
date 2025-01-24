@@ -17,7 +17,7 @@
   "theme.bar.buttons.y_margins": "0.1em",
   "theme.bar.buttons.workspaces.fontSize": "1em",
   "bar.workspaces.show_icons": false,
-  "bar.workspaces.show_numbered": true,
+  "bar.workspaces.show_numbered": false,
   "theme.bar.buttons.workspaces.smartHighlight": false,
   "bar.workspaces.spacing": 0.6,
   "bar.workspaces.hideUnoccupied": false,
@@ -326,7 +326,7 @@
   "theme.bar.buttons.workspaces.hover": "#f6c177",
   "theme.bar.buttons.workspaces.active": "#f6c177",
   "theme.bar.buttons.workspaces.occupied": "#c4a7e7",
-  "theme.bar.buttons.workspaces.available": "#21202e",
+  "theme.bar.buttons.workspaces.available": "#302d44",
   "theme.bar.buttons.workspaces.border": "#1f1d2e",
   "theme.bar.buttons.workspaces.background": "#21202e",
   "theme.bar.buttons.dashboard.icon": "#e0def4",
@@ -369,10 +369,10 @@
   "theme.bar.buttons.monochrome": false,
   "theme.bar.buttons.radius": "0.2em",
   "bar.workspaces.showAllActive": true,
-  "bar.workspaces.monitorSpecific": true,
+  "bar.workspaces.monitorSpecific": false,
   "bar.workspaces.reverse_scroll": false,
   "bar.workspaces.workspaceMask": false,
-  "bar.workspaces.workspaces": 4,
+  "bar.workspaces.workspaces": 7,
   "bar.workspaces.scroll_speed": 1,
   "theme.bar.buttons.windowtitle.enableBorder": false,
   "theme.bar.buttons.volume.enableBorder": false,
@@ -404,17 +404,16 @@
   "theme.bar.transparent": false,
   "theme.bar.buttons.modules.ram.enableBorder": false,
   "bar.layouts": {
-    "0": {
+    "*": {
       "left": [
         "dashboard",
-        "workspaces",
         "cpu",
         "cputemp",
         "ram",
         "windowtitle"
       ],
       "middle": [
-        "media"
+        "workspaces"
       ],
       "right": [
         "submap",
@@ -481,10 +480,13 @@
   "bar.workspaces.ignored": "- *",
   "bar.network.showWifiInfo": true,
   "theme.matugen": false,
-  "wallpaper.image": "/home/unwn/.config/hypr/wp.jpg",
+  "wallpaper.image": "/home/unwn/.config/hypr/wp2.jpg",
   "wallpaper.pywal": false,
   "theme.matugen_settings.scheme_type": "content",
   "theme.matugen_settings.variation": "standard_3",
   "theme.matugen_settings.contrast": 0,
-  "theme.matugen_settings.mode": "light"
+  "theme.matugen_settings.mode": "light",
+  "bar.autoHide": "never",
+  "tear": false,
+  "bar.workspaces.applicationIconOncePerWorkspace": false
 }

@@ -12,5 +12,9 @@
     {
         "key": "ctrl+alt+b",
         "command": "-workbench.action.toggleAuxiliaryBar"
-    }
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "fuzzySearch.activeTextEditor"
+    },
 ]

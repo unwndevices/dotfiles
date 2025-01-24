@@ -43,10 +43,13 @@ aseprite/files/
 !yazi/yazi.toml
 !starship.toml
 !resources/**
+!resources/
 !symlinks/**
 !/install.sh
 !/install_packages.sh
 !kanshi/
+!waybar/
+!waybar/**
 
 # ignore certain patterns in tracked directories
 **/.DS_Store

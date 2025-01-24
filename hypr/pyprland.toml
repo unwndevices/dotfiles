@@ -2,11 +2,23 @@
 plugins = ["scratchpads"]
 
 [scratchpads.term]
-command = "kitty --class scratchpad"
-class = "scratchpad"
+command = "kitty --class term"
+class = "term"
 animation = "fromTop"
 margin = 40
+unfocus = "hide"
+hysteresis = 2.0
 size = "50% 50%"
+allow_special_workspace = true
+
+[scratchpads.taskbook]
+command = "kitty --hold --class taskbook tb"
+class = "taskbook"
+animation = "fromBottom"
+margin = 40
+unfocus = "hide"
+hysteresis = 0.8
+size = "30% 30%"
 allow_special_workspace = true
 
 [scratchpads.perplexity]
@@ -20,7 +32,7 @@ size = "50% 70%"
 allow_special_workspace = true
 
 [scratchpads.yazi]
-command = "kitty --class yazi y"
+command = "kitty --class yazi yazi"
 class = "yazi"
 unfocus = "hide"
 hysteresis = 0.8
@@ -53,3 +65,4 @@ size = "50% 50%"
 allow_special_workspace = true
 pinned = false
 lazy = true
+

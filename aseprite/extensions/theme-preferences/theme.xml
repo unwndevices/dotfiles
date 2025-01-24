@@ -39,7 +39,7 @@
         <color id="disabled" value="#21202e" />
         <color id="face" value="#403d52" />
         <color id="hot_face" value="#ebbcba" />
-        <color id="selected" value="#26233a" />
+        <color id="selected" value="#c4a7e7" />
         <color id="selected_text" value="#e0def4" />
         <color id="separator_label" value="#ffffff" />
         <color id="background" value="#524f67" />
@@ -50,12 +50,12 @@
         <color id="textbox_code_face" value="#eeeeee" />
         <color id="entry_suffix" value="#19162e" />
         <color id="link_text" value="#ffffff" />
-        <color id="link_hover" value="#26233a" />
+        <color id="link_hover" value="#c4a7e7" />
         <color id="button_normal_text" value="#908caa" />
         <color id="button_hot_text" value="#908caa" />
         <color id="button_selected_text" value="#e0def4" />
         <color id="button_disabled_text" value="#524f67" />
-        <color id="button_disabled_shadow" value="#21202e" />
+        <color id="button_disabled_shadow" value="#c4a7e7" />
         <color id="check_hot_face" value="#ebbcba" />
         <color id="check_focus_face" value="#403d52" />
         <color id="radio_hot_face" value="#ebbcba" />
@@ -77,7 +77,7 @@
         <color id="listitem_normal_text" value="#908caa" />
         <color id="listitem_normal_face" value="#524f67" />
         <color id="listitem_selected_text" value="#e0def4" />
-        <color id="listitem_selected_face" value="#26233a" />
+        <color id="listitem_selected_face" value="#c4a7e7" />
         <color id="slider_empty_text" value="#908caa" />
         <color id="slider_full_text" value="#e0def4" />
         <color id="tab_normal_text" value="#908caa" />
@@ -85,18 +85,18 @@
         <color id="tab_active_face" value="#1f1d2e" />
         <color id="popup_window_border" value="#000000" />
         <color id="tooltip_text" value="#908caa" />
-        <color id="tooltip_face" value="#26233a" />
+        <color id="tooltip_face" value="#c4a7e7" />
         <color id="filelist_even_row_text" value="#908caa" />
         <color id="filelist_even_row_face" value="#524f67" />
         <color id="filelist_odd_row_text" value="#908caa" />
         <color id="filelist_odd_row_face" value="#524f67" />
         <color id="filelist_selected_row_text" value="#e0def4" />
-        <color id="filelist_selected_row_face" value="#26233a" />
+        <color id="filelist_selected_row_face" value="#c4a7e7" />
         <color id="filelist_disabled_row_text" value="#ffc8c8" />
         <color id="workspace" value="#1f1d2e" />
         <color id="workspace_text" value="#ebbcba" />
         <color id="workspace_link" value="#ebbcba" />
-        <color id="workspace_link_hover" value="#26233a" />
+        <color id="workspace_link_hover" value="#c4a7e7" />
         <color id="timeline_normal" value="#c6c6c6" />
         <color id="timeline_normal_text" value="#908caa" />
         <color id="timeline_hover" value="#d9d9d9" />

@@ -1,6 +1,8 @@
 {
   "window.commandCenter": false,
   "editor.fontFamily": "'SF Mono', 'monospace', monospace",
+  "editor.fontSize": 14,
+  "editor.indentSize": 4,
   "workbench.sideBar.location": "right",
   "workbench.colorTheme": "Rosé Pine",
   "workbench.iconTheme": "rose-pine-icons",
@@ -8,16 +10,28 @@
   "workbench.tree.indent": 18,
   "explorer.confirmDelete": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "phpCodeSniffer.standard": "Automatic",
   "editor.formatOnSave": true,
-  "phpCodeSniffer.autoExecutable": true,
   "files.autoSave": "afterDelay",
   "explorer.confirmDragAndDrop": false,
   "git.openRepositoryInParentFolders": "never",
+  "phpCodeSniffer.standard": "Automatic",
+  "phpCodeSniffer.autoExecutable": true,
   "phpCodeSniffer.lintAction": "Save",
   "[php]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "obliviousharmony.vscode-php-codesniffer"
   },
-  "cursor.cmdk.useThemedDiffBackground": true
+  "cursor.cmdk.useThemedDiffBackground": true,
+  "workspaceExplorer.workspaceStorageDirectory": "$HOME/dev/",
+  "workspaceExplorer.enableCustomIconSearch": false,
+  "workbench.editor.showTabs": "none",
+  "window.customTitleBarVisibility": "never",
+  "extensions.ignoreRecommendations": true,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "cursor.cpp.enablePartialAccepts": true,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "native",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
 }
