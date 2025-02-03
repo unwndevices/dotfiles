@@ -39,6 +39,7 @@ aseprite/files/
 !tmux/tmux.conf
 !waypaper/**
 !wofi/**
+!yazi/
 !yazi/keymap.toml
 !yazi/package.toml
 !yazi/theme.toml
