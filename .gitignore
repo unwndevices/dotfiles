@@ -54,6 +54,9 @@ aseprite/files/
 !kanshi/
 !waybar/
 !waybar/**
+!home/
+!home/.zshrc
+!home/.zprofile
 
 # ignore certain patterns in tracked directories
 **/.DS_Store
