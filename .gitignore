@@ -40,6 +40,7 @@ aseprite/files/
 !waypaper/**
 !wofi/**
 !yazi/
+!yazi/init.lua
 !yazi/keymap.toml
 !yazi/package.toml
 !yazi/theme.toml
