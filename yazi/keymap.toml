@@ -48,6 +48,16 @@ desc = "sudo delete"
 
 #jump to char
 [[manager.prepend_keymap]]
-on   = "f"
-run  = "plugin jump-to-char"
+on = "f"
+run = "plugin jump-to-char"
 desc = "Jump to char"
+
+[[manager.prepend_keymap]]
+on = ["c", "m"]
+run = "plugin chmod"
+desc = "Chmod on selected files"
+
+[[manager.prepend_keymap]]
+on = "!"
+run = 'shell "$SHELL" --block'
+desc = "Open shell here"

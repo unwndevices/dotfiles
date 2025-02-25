@@ -61,7 +61,7 @@ common.Control.gridNext	N
 common.Control.gridPreset		
 common.Control.gridPrev	Shift+N	
 common.Control.gridResetOrigin		
-common.Control.gridSetOrigin		
+common.Control.gridSetOrigin	S	
 common.Control.highContrastMode		
 common.Control.highContrastModeCycle	H	
 common.Control.imperialUnits		

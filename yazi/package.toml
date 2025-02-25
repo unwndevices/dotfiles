@@ -1,5 +1,27 @@
-[plugin]
-deps = [{ use = "yazi-rs/plugins:jump-to-char", rev = "02d18be" }, { use = "TD-Sky/sudo", rev = "f403008" }, { use = "yazi-rs/plugins:git", rev = "02d18be" }]
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "02d18be"
+hash = "72c66a0b3d60f8377eb9db5e1d8b60b2"
+
+[[plugin.deps]]
+use = "TD-Sky/sudo"
+rev = "f403008"
+hash = "bd78d2296020f9b410e2c47bc7eb6375"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "02d18be"
+hash = "4d6a07559118975e2dee983d27474d70"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "beb586a"
+hash = "ae9e1d0c6bfd68cdebc98cc684c22b45"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "beb586a"
+hash = "f28138c2e11e87962b66d583fef724c3"
 
 [flavor]
 deps = []

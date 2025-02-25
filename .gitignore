@@ -6,10 +6,10 @@
 !/README.md
 
 # Track specific configs
+!Cursor/
 !Code/User/settings.json
 !Code/User/keybindings.json
 !Code/User/snippets/**
-!Cursor/
 !Cursor/User/settings.json
 !Cursor/User/keybindings.json
 !Cursor/User/snippets/**

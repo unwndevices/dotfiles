@@ -1,25 +1,25 @@
 gui:
   theme:
     activeBorderColor:
-      - '#c4a7e7' # Iris (accent)
+      - "#c4a7e7" # Iris (accent)
       - bold
     inactiveBorderColor:
-      - '#908caa' # Subtle
+      - "#908caa" # Subtle
     optionsTextColor:
-      - '#9ccfd8' # Foam
+      - "#9ccfd8" # Foam
     selectedLineBgColor:
-      - '#26233a' # Overlay
+      - "#403d52" # Highlight Med
     cherryPickedCommitBgColor:
-      - '#403d52' # Highlight Med
+      - "#403d52" # Highlight Med
     cherryPickedCommitFgColor:
-      - '#c4a7e7' # Iris
+      - "#c4a7e7" # Iris
     unstagedChangesColor:
-      - '#eb6f92' # Love
+      - "#eb6f92" # Love
     defaultFgColor:
-      - '#e0def4' # Text
+      - "#e0def4" # Text
     searchingActiveBorderColor:
-      - '#f6c177' # Gold
+      - "#f6c177" # Gold
 
   authorColors:
-    '*': '#c4a7e7' # Iris
+    "*": "#c4a7e7" # Iris
 

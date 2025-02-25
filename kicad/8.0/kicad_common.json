@@ -11,7 +11,7 @@
     "backup_on_autosave": false,
     "enabled": true,
     "limit_daily_files": 5,
-    "limit_total_files": 25,
+    "limit_total_files": 10,
     "limit_total_size": 104857600,
     "min_interval": 300
   },
@@ -33,12 +33,12 @@
   },
   "graphics": {
     "cairo_antialiasing_mode": 1,
-    "opengl_antialiasing_mode": 2
+    "opengl_antialiasing_mode": 1
   },
   "input": {
-    "auto_pan": false,
+    "auto_pan": true,
     "auto_pan_acceleration": 5,
-    "center_on_zoom": true,
+    "center_on_zoom": false,
     "focus_follow_sch_pcb": false,
     "horizontal_pan": false,
     "hotkey_feedback": true,
