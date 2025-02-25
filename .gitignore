@@ -9,6 +9,7 @@
 !Code/User/settings.json
 !Code/User/keybindings.json
 !Code/User/snippets/**
+!Cursor/
 !Cursor/User/settings.json
 !Cursor/User/keybindings.json
 !Cursor/User/snippets/**
@@ -21,6 +22,7 @@ aseprite/files/
 
 !BetterDiscord/**/*.json
 !BetterDiscord/**/*.css
+BetterDiscord/data/stable/misc.json
 !btop/**
 !clips/**
 !dooit/**
