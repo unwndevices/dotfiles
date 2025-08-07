@@ -1,6 +1,6 @@
 {
   "bar.customModules.updates.pollingInterval": 1440000,
-  "theme.font.name": "SF Mono",
+  "theme.font.name": "CommitMono Nerd Font",
   "theme.font.weight": 500,
   "theme.font.size": "0.9rem",
   "menus.transition": "crossfade",
@@ -249,11 +249,11 @@
   "theme.bar.buttons.modules.weather.text": "#c4a7e7",
   "theme.bar.buttons.modules.weather.background": "#21202e",
   "theme.bar.buttons.modules.weather.border": "#c4a7e7",
-  "theme.bar.buttons.modules.updates.icon_background": "#30738f",
-  "theme.bar.buttons.modules.updates.icon": "#30738f",
-  "theme.bar.buttons.modules.updates.text": "#30738f",
+  "theme.bar.buttons.modules.updates.icon_background": "#c4a7e7",
+  "theme.bar.buttons.modules.updates.icon": "#c4a7e7",
+  "theme.bar.buttons.modules.updates.text": "#c4a7e7",
   "theme.bar.buttons.modules.updates.background": "#21202e",
-  "theme.bar.buttons.modules.updates.border": "#30738f",
+  "theme.bar.buttons.modules.updates.border": "#c4a7e7",
   "theme.bar.buttons.modules.kbLayout.icon_background": "#9ccfd8",
   "theme.bar.buttons.modules.kbLayout.icon": "#c4a7e7",
   "theme.bar.buttons.modules.kbLayout.text": "#c4a7e7",
@@ -407,9 +407,11 @@
     "*": {
       "left": [
         "dashboard",
+        "updates",
         "cpu",
         "cputemp",
         "ram",
+        "windowstash",
         "windowtitle"
       ],
       "middle": [
@@ -434,7 +436,7 @@
   "bar.customModules.ram.labelType": "percentage",
   "bar.customModules.scrollSpeed": 1,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
-  "bar.customModules.submap.showSubmapName": false,
+  "bar.customModules.submap.showSubmapName": true,
   "bar.customModules.submap.enabledText": "On",
   "bar.customModules.submap.disabledText": "Off",
   "bar.scrollSpeed": 1,
@@ -471,11 +473,11 @@
   "bar.workspaces.numbered_active_indicator": "color",
   "theme.bar.buttons.modules.cpuTemp.text": "#c4a7e7",
   "theme.bar.buttons.modules.cpuTemp.icon": "#c4a7e7",
-  "bar.customModules.cpuTemp.sensor": "/sys/devices/platform/coretemp.0/hwmon/hwmon7/temp1_input",
-  "bar.customModules.submap.label": false,
+  "bar.customModules.cpuTemp.sensor": "/sys/devices/platform/PNP0C14:08/wmi_bus/wmi_bus-PNP0C14:08/8A42EA14-4F2A-FD45-6422-0087F7A7E608/hwmon/hwmon6/temp1_input",
+  "bar.customModules.submap.label": true,
   "bar.customModules.submap.enabledIcon": "󰌐",
   "hyprpanel.restartCommand": "ags -q; ags",
-  "bar.network.rightClick": "nm-connection-editor",
+  "bar.network.rightClick": "ronema",
   "theme.bar.buttons.workspaces.enableBorder": false,
   "bar.workspaces.ignored": "- *",
   "bar.network.showWifiInfo": true,
@@ -488,5 +490,21 @@
   "theme.matugen_settings.mode": "light",
   "bar.autoHide": "never",
   "tear": false,
-  "bar.workspaces.applicationIconOncePerWorkspace": false
+  "bar.workspaces.applicationIconOncePerWorkspace": false,
+  "bar.customModules.windowstash.icon": "",
+  "theme.bar.buttons.modules.windowstash.enableBorder": false,
+  "bar.customModules.windowstash.iconMap": {
+    "kitty": "",
+    "Cursor": "󰅱",
+    "zen": "",
+    "yazi": "󰉋"
+  },
+  "bar.customModules.windowstash.label": false,
+  "bar.customModules.windowstash.pollingInterval": 300,
+  "theme.font.label": "CommitMono Nerd Font",
+  "terminal": "kitty",
+  "bar.customModules.updates.leftClick": "kitty -e /usr/share/hyprpanel/scripts/runUpdates.sh -arch",
+  "theme.bar.buttons.modules.power.enableBorder": false,
+  "bar.customModules.microphone.label": false,
+  "theme.bar.buttons.modules.microphone.enableBorder": false
 }

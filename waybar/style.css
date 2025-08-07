@@ -1,0 +1,162 @@
+@import url('colors.css');
+
+* {
+    font-size:14px;
+    font-family: "CommitMono Nerd Font Mono";
+}
+window#waybar{
+    border-radius:6px;
+    background: alpha(@overlay,.8);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+
+tooltip {
+    background:@base;
+    color: @iris;
+}
+#clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+    transition: all .3s ease;
+    color:@color3;
+}
+#custom-notification {
+    padding: 0px 5px 0px 10px;
+    transition: all .3s ease;
+    color:@iris;
+}
+#clock{
+    padding: 0px 5px;
+    color:@iris;
+    transition: all .3s ease;
+}
+#custom-pacman{
+    padding: 0px 5px;
+    margin: 0px 5px;
+    transition: all .3s ease;
+    color:@iris;
+
+}
+#workspaces {
+    padding: 7px 5px;
+}
+#workspaces button {
+    all:unset;
+    padding: 0px 5px;
+    color: alpha(@iris,.8);
+    transition: all .2s ease;
+}
+#workspaces button:hover {
+    color: @love;
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: @gold;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#workspaces button.empty {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: @love;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#bluetooth{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@iris;
+
+}
+#network{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@iris;
+
+}
+#battery{
+    padding: 0px 10px 0px 5px;
+    transition: all .3s ease;
+    color:@iris;
+
+
+}
+#battery.charging {
+    color: #60c289;
+}
+
+#battery.warning:not(.charging) {
+    color: #f7c47d;
+}
+
+#battery.critical:not(.charging) {
+    color: #eb6f92;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#group-expand{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+#custom-expand{
+    padding: 0px 5px;
+    color:alpha(@iris,.5);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
+    transition: all .3s ease; 
+}
+#custom-expand:hover{
+    color:alpha(@iris,.5);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
+}
+#custom-colorpicker{
+    padding: 0px 5px;
+}
+#cpu,#memory,#temperature{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+    color:@iris;
+
+}
+#custom-endpoint{
+    color:transparent;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
+
+}
+#tray{
+    padding: 0px 10px;
+    transition: all .3s ease; 
+
+}
+#tray menu * {
+    border-radius: 15px;
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#tray menu  {
+    background: alpha(@overlay,.9);
+    padding: 0px 5px;
+    transition: all .2s ease; 
+}
+
+#tray menu menuitem {
+    color: @iris;
+  }
+
+#tray menu menuitem:hover {
+    background: alpha(@overlay,.9);
+    color: @gold;
+    transition: all 0s ease;
+  }

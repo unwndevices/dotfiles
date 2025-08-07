@@ -1,0 +1,10 @@
+@import "config.rasi"
+
+configuration {
+  show-icons: false;
+}
+
+listview {
+  columns: 3;
+}
+

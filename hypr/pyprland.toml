@@ -4,31 +4,17 @@ plugins = ["scratchpads"]
 [scratchpads.term]
 command = "kitty --class term"
 class = "term"
-animation = "fromTop"
-margin = 40
-unfocus = "hide"
-hysteresis = 2.0
-size = "50% 50%"
-allow_special_workspace = true
-
-[scratchpads.taskbook]
-command = "kitty --hold --class taskbook tb"
-class = "taskbook"
 animation = "fromBottom"
 margin = 40
-unfocus = "hide"
-hysteresis = 0.8
-size = "30% 30%"
+size = "50% 50%"
 allow_special_workspace = true
 
 [scratchpads.perplexity]
 command = "perplexity-ai-app"
 class = "Perplexity AI"
 animation = "fromTop"
-unfocus = "hide"
-hysteresis = 0.8
 margin = 40
-size = "50% 70%"
+size = "60% 70%"
 allow_special_workspace = true
 
 [scratchpads.yazi]
@@ -38,7 +24,7 @@ unfocus = "hide"
 hysteresis = 0.8
 animation = "fromTop"
 margin = 40
-size = "50% 50%"
+size = "90% 90%"
 allow_special_workspace = true
 
 [scratchpads.btop]
@@ -51,18 +37,12 @@ margin = 40
 size = "50% 50%"
 allow_special_workspace = true
 
-[scratchpads.kicad]
-command = "kicad"
-process_tracking = false
-class = "kicad"
-match-by = "title"
-title = '''re:^.*KiCad\s\d+(\.\d+)*$'''
-animation = "fromTop"
+[scratchpads.lazygit]
+command = "kitty --class lazygit lazygit"
+class = "lazygit"
 unfocus = "hide"
 hysteresis = 0.8
+animation = "fromTop"
 margin = 40
-size = "50% 50%"
+size = "90% 90%"
 allow_special_workspace = true
-pinned = false
-lazy = true
-

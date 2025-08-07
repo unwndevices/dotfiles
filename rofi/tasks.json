@@ -1,0 +1,10 @@
+[
+    {
+      "name": "Eisei Daisy - Build and Program",
+      "command": "kitty --single-instance --class scratchpad -e zsh -c 'cd ~/dev/unwn/eisei/daisy/; make clean; make; make program; echo \"Press enter to close...\"; read'"
+    },
+    {
+      "name": "Eisei Daisy - Build",
+      "command": "kitty --single-instance --class scratchpad -e zsh -c 'cd ~/dev/unwn/eisei/daisy/; make clean; make; echo \"Press enter to close...\"; read'"
+    }
+]

@@ -22,4 +22,7 @@ gui:
 
   authorColors:
     "*": "#c4a7e7" # Iris
+  
+  nerdFontsVersion: "3"
 
+notARepository: skip

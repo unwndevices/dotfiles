@@ -1,0 +1,63 @@
+@import "theme.rasi"
+configuration {
+  modi: "drun";
+  show-icons: true;
+  run {
+    fallback-icon: "window";
+  }
+  display-drun: "app";
+  font: "Hack Nerd Font Mono 14";
+  layer: "rofi";
+}
+
+* {
+  transparency: "real";
+  text-color: @color-fg;
+  background-color: transparent;
+}
+
+window {
+  width: 30%;
+  height: 42%;
+  border: 1px;
+  border-color: @color-iris;
+  padding: 8px 12px;
+  border-radius: @rounded-xl;
+  background-color: @color-bg;
+
+}
+
+prompt {
+  text-color: @color-fg;
+  padding: 4px 8px;
+  border-radius: @rounded-md;
+  background-color: @color-green;
+}
+
+entry {
+  padding: 4px;
+}
+
+element {
+  padding: 8px 10px;
+  border-radius: @rounded-sm;
+}
+
+element selected {
+  background-color: @color-iris;
+  border-radius: @rounded-md;
+}
+
+element-icon {
+  margin: 0 10px 0 0;
+  size: 24px;
+}
+
+element-text {
+  font: "CommitMono Nerd Font Mono 10";
+}
+
+element-text selected {
+  color: @color-black;
+}
+

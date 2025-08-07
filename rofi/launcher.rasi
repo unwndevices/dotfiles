@@ -1,0 +1,12 @@
+@import "config.rasi"
+
+inputbar {
+  margin: 8px 0;
+}
+
+listview {
+  columns: 2;
+}
+
+
+// vi: ft=css

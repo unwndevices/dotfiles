@@ -14,6 +14,9 @@
 !Cursor/User/keybindings.json
 !Cursor/User/snippets/**
 
+!.cursor/
+!.cursor/**
+
 !aseprite/**
 !aseprite/
 !aseprite/extensions/theme-preferences/__pref.lua
@@ -30,6 +33,8 @@ BetterDiscord/data/stable/misc.json
 !qt*/**
 !hypr/**
 !hypr/
+!hypr/scripts/
+!hypr/scripts/**
 !hyprpanel/**
 !kicad/**
 !kitty/**
@@ -59,6 +64,8 @@ BetterDiscord/data/stable/misc.json
 !home/
 !home/.zshrc
 !home/.zprofile
+!rofi/
+!rofi/**/**
 
 # ignore certain patterns in tracked directories
 **/.DS_Store
