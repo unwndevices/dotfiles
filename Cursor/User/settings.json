@@ -61,5 +61,7 @@
   "cursor.cpp.disabledLanguages": ["plaintext"],
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "terminal.external.linuxExec": "kitty",
+  "terminal.explorerKind": "external"
 }

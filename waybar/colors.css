@@ -2,6 +2,8 @@
 @define-color surface #1f1d2e;
 @define-color overlay #26233a;
 @define-color text #e0def4;
+/* Alias used by style.css */
+@define-color foreground #e0def4;
 @define-color love #eb6f92;
 @define-color gold #f6c177;
 @define-color rose #ebbcba;

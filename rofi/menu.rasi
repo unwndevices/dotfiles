@@ -1,0 +1,121 @@
+/**
+ * Rose Pine theme with Omarchy-style layout
+ */
+
+@import "theme.rasi"
+
+configuration {
+    show-icons: false;
+    font: "JetBrainsMono Nerd Font 11";
+    display-drun: "";
+    drun-display-format: "{name}";
+    click-to-exit: true;
+    location: 0;
+}
+
+window {
+    transparency: "real";
+    background-color: @color-bg;
+    text-color: @color-fg;
+    border: 2px;
+    border-color: @color-iris;
+    border-radius: @rounded-xl;
+    width: 400px;
+    anchor: center;
+    x-offset: 0;
+    y-offset: 0;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ inputbar, message, listview ];
+    spacing: 15px;
+    padding: 20px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    background-color: @color-black;
+    text-color: @color-fg;
+    expand: false;
+    border-radius: @rounded-md;
+    padding: 10px;
+    position: center;
+}
+
+prompt {
+    enabled: true;
+    background-color: transparent;
+    text-color: @color-iris;
+    padding: 0px 10px 0px 0px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: "";
+    background-color: transparent;
+    text-color: @color-fg;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @color-fg;
+    placeholder-color: @color-lightgray;
+    expand: true;
+    horizontal-align: 0;
+    placeholder: "Search...";
+    blink: true;
+}
+
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 8;
+    spacing: 5px;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+}
+
+element {
+    background-color: transparent;
+    text-color: @color-fg;
+    orientation: horizontal;
+    border-radius: @rounded-md;
+    padding: 10px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    expand: true;
+    horizontal-align: 0;
+    vertical-align: 0.5;
+    margin: 0px 2.5px 0px 2.5px;
+}
+
+element selected {
+    background-color: @color-iris;
+    text-color: @color-black;
+    border: 0px;
+    border-radius: @rounded-md;
+}
+
+element.active,
+element.selected.urgent {
+    background-color: @color-red;
+    text-color: @color-black;
+    border-radius: @rounded-md;
+}
+
+element.selected.active {
+    background-color: @color-green;
+    text-color: @color-black;
+}
+
+message {
+    background-color: transparent;
+    text-color: @color-fg;
+    padding: 10px;
+    border-radius: @rounded-md;
+}
