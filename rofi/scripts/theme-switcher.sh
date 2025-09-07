@@ -41,13 +41,26 @@ fi
 
 echo "Reloading apps..."
 
-# Kitty (try socket, then transient window fallback)
+# Kitty: fast, no-window reloads using control sockets
 KITTY_CONF="$HOME/.config/kitty/current-theme.conf"
-if ! kitty @ --to unix:@kitty --timeout 0.2 set-colors -a "$KITTY_CONF" 2>/dev/null; then
-  if ! kitty @ --timeout 0.2 set-colors -a "$KITTY_CONF" 2>/dev/null; then
-    # Fallback: spawn a short-lived kitty window inside the existing instance
-    # so $KITTY_LISTEN_ON is available, then remote-control from there.
-    kitty --single-instance sh -lc "kitty @ set-colors -a '$KITTY_CONF' || true" >/dev/null 2>&1 || true
+sent=false
+# 1) Try the configured abstract socket name
+if kitty @ --to unix:@kitty --timeout 0.15 set-colors -a "$KITTY_CONF" >/dev/null 2>&1; then
+  sent=true
+else
+  # 2) Probe running kitty processes for their KITTY_LISTEN_ON and send there
+  if command -v pgrep >/dev/null 2>&1; then
+    for pid in $(pgrep -x kitty 2>/dev/null); do
+      if [[ -r "/proc/$pid/environ" ]]; then
+        sock=$(tr '\0' '\n' < "/proc/$pid/environ" | sed -n 's/^KITTY_LISTEN_ON=//p' | head -n1)
+        if [[ -n "$sock" ]]; then
+          if kitty @ --to "$sock" --timeout 0.15 set-colors -a "$KITTY_CONF" >/dev/null 2>&1; then
+            sent=true
+            break
+          fi
+        fi
+      fi
+    done
   fi
 fi
 
