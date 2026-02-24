@@ -6,7 +6,7 @@
 
 configuration {
     show-icons: false;
-    font: "JetBrainsMono Nerd Font 11";
+    font: "CommitMono Nerd Font Mono 11";
     display-drun: "";
     drun-display-format: "{name}";
     click-to-exit: true;

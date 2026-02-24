@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 # Power menu options
-shutdown="⏻ Shutdown"
-reboot="󰜉 Reboot"
-lock="󰌾 Lock"
-suspend="󰤄 Suspend"
-logout="󰍃 Logout"
-cancel="󰅖 Cancel"
+shutdown="⏻  Shutdown"
+reboot="󰜉  Reboot"
+lock="󰌾  Lock"
+suspend="󰤄  Suspend"
+logout="󰍃  Logout"
+cancel="󰅖  Cancel"
 
 # Get the selected option
 chosen=$(echo -e "$shutdown\n$reboot\n$lock\n$suspend\n$logout\n$cancel" | \

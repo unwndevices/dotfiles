@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<brushes/>
+<brushes>
+    <brush type="image" imagecolor="true">
+        <image width="4" height="4" format="indexed">FQAVAAAVABUVABUAABUAFQ==</image>
+        <mask width="4" height="4" format="bitmap">AQEBAQEBAQEBAQEBAQEBAQ==</mask>
+    </brush>
+</brushes>

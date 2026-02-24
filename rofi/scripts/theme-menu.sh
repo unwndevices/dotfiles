@@ -7,6 +7,7 @@ THEME_DIR="$HOME/.config/themes"
 declare -A THEME_LABELS=(
   ["rose-pine"]="🌹 Rose Pine"
   ["monochrome"]="⚫ Monochrome"
+  ["gameboy-pocket"]="🎮 Game Boy Pocket"
 )
 
 # Determine current theme by resolving rofi's theme link if present
@@ -41,6 +42,7 @@ choice=$(printf '%s\n' "${entries[@]}" | rofi -dmenu \
 case "$choice" in
   *Rose\ Pine*) exec "$HOME/.config/rofi/scripts/theme-switcher.sh" rose-pine ;;
   *Monochrome*) exec "$HOME/.config/rofi/scripts/theme-switcher.sh" monochrome ;;
+  *Game\ Boy\ Pocket*) exec "$HOME/.config/rofi/scripts/theme-switcher.sh" gameboy-pocket ;;
   *Cancel*|"") exit 0 ;;
   *)
     # Fallback: map label back to key

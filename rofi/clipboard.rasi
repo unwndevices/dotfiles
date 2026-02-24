@@ -43,7 +43,7 @@ element {
 }
 
 element-text {
-  font: "Noto Sans CJK SC 12";
+  font: "CommitMono Nerd Font Mono 12";
 }
 
 element selected {

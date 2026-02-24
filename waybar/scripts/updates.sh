@@ -109,7 +109,7 @@ emit_json() {
   # Keep visible even at zero; do not hide automatically
   cls=""
   tooltip="System: ${sys}\nFlatpak: ${fp}"
-  printf '{"text":"%s %s","tooltip":"%s","class":"%s"}\n' "$icon" "$total" "$tooltip" "$cls"
+  printf '{"text":"%s %s","tooltip":"%s","class":"%s"}\n' "$total" "$icon" "$tooltip" "$cls"
 }
 
 case "${1-}" in

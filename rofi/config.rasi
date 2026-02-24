@@ -6,7 +6,7 @@ configuration {
     fallback-icon: "window";
   }
   display-drun: "app";
-  font: "Hack Nerd Font Mono 14";
+  font: "CommitMono Nerd Font Mono 14";
   layer: "rofi";
 }
 
@@ -60,4 +60,3 @@ element-text {
 element-text selected {
   color: @color-black;
 }
-

@@ -29,7 +29,7 @@ get_networks() {
     nmcli --fields "SECURITY,SSID" device wifi list | sed 1d | \
         sed 's/  */ /g' | sed -E "s/WPA*.?\S/ /g" | \
         sed "s/^--//g" | sed "s/  //g" | sed "/--/d" | \
-        sed "s/ / /g" | sed "s/^ */󰤨 /g"
+        sed "s/ / /g" | sed "s/^ */󰤨  /g"
 }
 
 # Main menu
@@ -38,17 +38,17 @@ main_menu() {
     
     if [[ "$status" == "connected" ]]; then
         current=$(nmcli -t -f NAME connection show --active | head -n1)
-        toggle="󰤭 Disconnect"
-        current_info="󰤢 Connected to: $current"
+        toggle="󰤭  Disconnect"
+        current_info="󰤢  Connected to: $current"
     elif [[ "$status" == "disconnected" ]]; then
-        toggle="󰤯 Connect"
-        current_info="󰤮 Not connected"
+        toggle="󰤯  Connect"
+        current_info="󰤮  Not connected"
     else
-        toggle="󰤯 Enable WiFi"
-        current_info="󰤮 WiFi disabled"
+        toggle="󰤯  Enable WiFi"
+        current_info="󰤮  WiFi disabled"
     fi
     
-    options="$current_info\n$toggle\n󰌘 Manual Connection\n󱛅 Network Settings\n󰅖 Exit"
+    options="$current_info\n$toggle\n󰌘  Manual Connection\n󱛅  Network Settings\n󰅖  Exit"
     
     if [[ "$status" == "connected" ]] || [[ "$status" == "disconnected" ]]; then
         networks=$(get_networks)
@@ -87,19 +87,19 @@ main_menu() {
                 fi
             fi
             ;;
-        "󱛅 Network Settings")
+        "󱛅  Network Settings")
             nm-connection-editor &
             ;;
-        "󰅖 Exit")
+        "󰅖  Exit")
             exit 0
             ;;
-        "󰤢 Connected to:"*|"󰤮 Not connected"|"󰤮 WiFi disabled"| " ")
+        "󰤢  Connected to:"*|"󰤮  Not connected"|"󰤮  WiFi disabled"| " ")
             # Do nothing for status lines
             ;;
         *)
             # Connect to selected network
             if [[ -n "$chosen" ]] && [[ "$chosen" == *"󰤨"* ]]; then
-                ssid=$(echo "$chosen" | sed "s/󰤨 //g" | sed "s/ //g")
+                ssid=$(echo "$chosen" | sed -E 's/^󰤨[[:space:]]+//' | sed "s/ //g")
                 password=$(rofi -dmenu -p "Password" -password \
                     -theme ~/.config/rofi/menu.rasi \
                     -theme-str "window { width: 350px; }")

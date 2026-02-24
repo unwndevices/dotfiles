@@ -9,14 +9,6 @@ margin = 40
 size = "50% 50%"
 allow_special_workspace = true
 
-[scratchpads.perplexity]
-command = "perplexity-ai-app"
-class = "Perplexity AI"
-animation = "fromTop"
-margin = 40
-size = "60% 70%"
-allow_special_workspace = true
-
 [scratchpads.yazi]
 command = "kitty --class yazi yazi"
 class = "yazi"

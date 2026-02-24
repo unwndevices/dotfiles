@@ -1,6 +1,6 @@
 configuration {
   modi: "powermenu:rofi-powermenu";
-  font: "RobotoMono Nerd Font 14";
+  font: "CommitMono Nerd Font Mono 14";
 }
 
 @import "theme.rasi"

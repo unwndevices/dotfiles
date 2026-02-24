@@ -63,7 +63,8 @@ window#waybar {
 #bluetooth,
 #pulseaudio,
 #custom-omarchy,
-#custom-update {
+#custom-update,
+#custom-notification {
   min-width: 12px;
   margin: 0 7.5px;
   font-size: 20px;
@@ -80,7 +81,19 @@ tooltip {
 }
 
 #custom-update {
-  font-size: 10px;
+  font-size: 14px;
+}
+
+#custom-notification {
+  color: @foreground;
+}
+
+#custom-notification.has-notifications {
+  color: @gold;
+}
+
+#custom-notification.no-notifications {
+  color: alpha(@foreground, 0.6);
 }
 
 #clock {

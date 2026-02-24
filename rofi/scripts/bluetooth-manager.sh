@@ -30,9 +30,9 @@ get_paired_devices() {
         device=$(echo "$line" | cut -d ' ' -f 3-)
         mac=$(echo "$line" | cut -d ' ' -f 2)
         if bluetoothctl info "$mac" | grep -q "Connected: yes"; then
-            echo "󰂱 $device (connected)"
+            echo "󰂱  $device (connected)"
         else
-            echo "󰂯 $device"
+            echo "󰂯  $device"
         fi
     done
 }
@@ -44,7 +44,7 @@ get_available_devices() {
         mac=$(echo "$line" | cut -d ' ' -f 2)
         # Skip already paired devices
         if ! bluetoothctl devices Paired | grep -q "$mac"; then
-            echo "󰂰 $device"
+            echo "󰂰  $device"
         fi
     done
 }
@@ -85,14 +85,14 @@ main_menu() {
     fi
     
     if [[ "$status" == "enabled" ]]; then
-        toggle="󰂲 Disable Bluetooth"
-        current_info="󰂯 Bluetooth Enabled"
+        toggle="󰂲  Disable Bluetooth"
+        current_info="󰂯  Bluetooth Enabled"
     else
-        toggle="󰂯 Enable Bluetooth"
-        current_info="󰂲 Bluetooth Disabled"
+        toggle="󰂯  Enable Bluetooth"
+        current_info="󰂲  Bluetooth Disabled"
     fi
     
-    options="$current_info\n$toggle\n󰂰 Scan for Devices\n󱛃 Bluetooth Settings\n󰅖 Exit"
+    options="$current_info\n$toggle\n󰂰  Scan for Devices\n󱛃  Bluetooth Settings\n󰅖  Exit"
     
     if [[ "$status" == "enabled" ]]; then
         paired=$(get_paired_devices)
@@ -123,35 +123,35 @@ main_menu() {
         -theme-str "listview { lines: 10; }")
     
     case "$chosen" in
-        "󰂲 Disable Bluetooth"|"󰂯 Enable Bluetooth")
+        "󰂲  Disable Bluetooth"|"󰂯  Enable Bluetooth")
             toggle_bluetooth
             ;;
-        "󰂰 Scan for Devices")
+        "󰂰  Scan for Devices")
             notify-send "Bluetooth" "Scanning for devices..." -i bluetooth-active
             main_menu
             ;;
-        "󱛃 Bluetooth Settings")
+        "󱛃  Bluetooth Settings")
             blueman-manager &
             ;;
-        "󰅖 Exit")
+        "󰅖  Exit")
             exit 0
             ;;
-        "󰂯 Bluetooth Enabled"|"󰂲 Bluetooth Disabled"| " "|"━━━ Paired Devices ━━━"|"━━━ Available Devices ━━━")
+        "󰂯  Bluetooth Enabled"|"󰂲  Bluetooth Disabled"| " "|"━━━ Paired Devices ━━━"|"━━━ Available Devices ━━━")
             # Do nothing for status lines
             ;;
         "󰂱 "*)
             # Connected paired device - disconnect
-            device=$(echo "$chosen" | sed 's/󰂱 //g' | sed 's/ (connected)//g')
+            device=$(echo "$chosen" | sed -E 's/^󰂱[[:space:]]+//' | sed 's/ (connected)//g')
             connect_device "$device"
             ;;
         "󰂯 "*)
             # Disconnected paired device - connect
-            device=$(echo "$chosen" | sed 's/󰂯 //g')
+            device=$(echo "$chosen" | sed -E 's/^󰂯[[:space:]]+//')
             connect_device "$device"
             ;;
         "󰂰 "*)
             # Available device - pair and connect
-            device=$(echo "$chosen" | sed 's/󰂰 //g')
+            device=$(echo "$chosen" | sed -E 's/^󰂰[[:space:]]+//')
             pair_device "$device"
             ;;
     esac

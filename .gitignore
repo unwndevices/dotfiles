@@ -66,6 +66,7 @@ BetterDiscord/data/stable/misc.json
 !home/.zprofile
 !rofi/
 !rofi/**/**
+!themes/
 
 # ignore certain patterns in tracked directories
 **/.DS_Store

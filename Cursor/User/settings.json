@@ -63,5 +63,9 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "terminal.external.linuxExec": "kitty",
-  "terminal.explorerKind": "external"
+  "terminal.explorerKind": "external",
+  "cursor.inlineDiff.enablePerformanceProtection": false,
+  "cursor.composer.usageSummaryDisplay": "always",
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.composer.queueMessageDefaultBehavior": "send"
 }
