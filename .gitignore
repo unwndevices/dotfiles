@@ -1,0 +1,8 @@
+# Ignore everything by default
+/**
+
+# Track repo essentials
+!.gitignore
+!/README.md
+!/CLAUDE.md
+!/AGENTS.md
