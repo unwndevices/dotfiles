@@ -1,0 +1,28 @@
+gui:
+  theme:
+    activeBorderColor:
+      - "#c4a7e7" # Iris (accent)
+      - bold
+    inactiveBorderColor:
+      - "#908caa" # Subtle
+    optionsTextColor:
+      - "#9ccfd8" # Foam
+    selectedLineBgColor:
+      - "#403d52" # Highlight Med
+    cherryPickedCommitBgColor:
+      - "#403d52" # Highlight Med
+    cherryPickedCommitFgColor:
+      - "#c4a7e7" # Iris
+    unstagedChangesColor:
+      - "#eb6f92" # Love
+    defaultFgColor:
+      - "#e0def4" # Text
+    searchingActiveBorderColor:
+      - "#f6c177" # Gold
+
+  authorColors:
+    "*": "#c4a7e7" # Iris
+  
+  nerdFontsVersion: "3"
+
+notARepository: skip

@@ -7,3 +7,23 @@
 !/CLAUDE.md
 !/AGENTS.md
 !/install_packages.sh
+!/link_home.sh
+!/setup.sh
+!/setup.py
+
+# Home dir dotfiles (symlinked by link_home.sh)
+!/home/
+!/home/**
+
+# Configs for install_packages.sh apps
+!/kitty/
+!/kitty/**
+!/lazygit/
+!/lazygit/**
+!/nvim/
+!/nvim/**
+!/starship.toml
+!/tmux/
+!/tmux/**
+!/yazi/
+!/yazi/**
